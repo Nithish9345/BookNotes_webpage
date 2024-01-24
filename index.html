@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <script src="/script.js"></script>
+
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container" >
+            <h1>Psycology Of Money</h1>
+            <h5>Morgen Housel</h5>
+            <p>The book emphasizes the importance of long-term thinking and the recognition that money is not 
+                just about numbers but is deeply intertwined with human behavior and emotions. Overall, 
+                "The Psychology of Money" offers a thought-provoking perspective on the intersection of psychology and 
+                finance, encouraging readers to reflect on their own attitudes toward money for a more informed and 
+                mindful financial journey.
+            </p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+    </div>
+
+    <button class="plus-btn">+</button>
+
+    
+    <div id="overlay-box">
+    </div>
+
+    <div class="pop-box">
+
+        <h1>Add Book</h1>
+        <form>
+            <input type="text" placeholder="Title" id="book-title-ip">
+            <input type="text" placeholder="Author" id="book-author-ip">
+            <textarea id="text-area" placeholder="Short description"></textarea>
+            <button id="add-btn">Add</button>
+            <button id="Cancel-btn">Cancel</button>
+        </form>
+    </div>
+    <script src= "script.js"></script>
+</body>
+</html>

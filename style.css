@@ -1,0 +1,113 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+background-color: coral;
+padding: 10px;
+}
+
+.container {
+padding: 10px;
+}
+
+.book-container {
+padding: 15px;
+width: 30%; 
+background-color: black;
+color: white;
+border-radius: 10px;
+margin: 10px 0; 
+}
+
+.book-container h1, .book-container h5, .book-container p {
+padding-top: 10px;
+margin: 5px;
+}
+
+.book-container h1 {
+color: coral;
+}
+
+.book-container button {
+background-color: coral;
+color: black;
+border-radius: 5px;
+padding: 3px;
+border: none;
+display: inline-block;
+}
+
+.plus-btn {
+border-radius: 100%;
+background-color: coral;
+font-size: 30px;
+position: fixed;
+left: 85%;
+padding: 20px 30px;
+border: none;
+}
+
+.pop-box {
+width: 80%; /* Adjust width for smaller screens */
+background-color: coral;
+border-radius: 10px;
+padding: 20px;
+position: absolute;
+top: 20%;
+left: 10%;
+z-index: 2;
+display: none;
+}
+
+#overlay-box {
+background-color: black;
+opacity: 0.8;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 1;
+display: none;
+}
+
+#book-title-ip, #book-author-ip, #text-area, #add-btn, #Cancel-btn {
+display: inline-block;
+border: none;
+width: 100%; /* Adjust width for smaller screens */
+}
+
+#book-title-ip, #book-author-ip, #text-area {
+padding: 5px;
+margin-top: 15px;
+background: transparent;
+}
+
+#add-btn, #Cancel-btn {
+padding: 3px 5px;
+margin-top: 10px;
+margin-right: 0; /* Adjust margin for smaller screens */
+background-color: black;
+color: white;
+border-radius: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+/* Adjust styles for screens with a maximum width of 600 pixels */
+.pop-box {
+   width: 90%;
+   left: 5%;
+}
+
+.plus-btn {
+   left: 80%;
+}
+}
