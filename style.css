@@ -24,7 +24,10 @@ width: 30%;
 background-color: black;
 color: white;
 border-radius: 10px;
-margin: 10px 0; 
+margin: 10px 5px; 
+display: inline-block;
+vertical-align: top;
+
 }
 
 .book-container h1, .book-container h5, .book-container p {
@@ -49,10 +52,11 @@ display: inline-block;
 border-radius: 100%;
 background-color: coral;
 font-size: 30px;
-position: fixed;
+position: relative;
 left: 85%;
 padding: 20px 30px;
 border: none;
+display: block;
 }
 
 .pop-box {
@@ -65,6 +69,7 @@ top: 20%;
 left: 10%;
 z-index: 2;
 display: none;
+margin-left: 20px;
 }
 
 #overlay-box {
@@ -101,13 +106,26 @@ border-radius: 3px;
 }
 
 @media only screen and (max-width: 600px) {
-/* Adjust styles for screens with a maximum width of 600 pixels */
+
 .pop-box {
-   width: 90%;
+   width: 80%;
    left: 5%;
+
+}
+
+.book-container{
+   width: 80%;
+   align-items: center;
+   
 }
 
 .plus-btn {
-   left: 80%;
+   left: 60%;
+   display: inline-block;
+   
 }
+
+
+
+
 }

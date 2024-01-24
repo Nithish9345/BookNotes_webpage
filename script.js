@@ -4,7 +4,7 @@ var popupbox = document.querySelector(".pop-box")
 
 plus.addEventListener("click", function(event){
     overlaybox.style.display = "block"
-    popupbox.style.display = "block"
+    popupbox.style.display = "inline"
 
 })
 
